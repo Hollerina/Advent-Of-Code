@@ -114,9 +114,9 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 </details>
 <details closed>
   <summary>
-    <h2>Day 4: :1234:</h2>&nbsp;
+    <h2>Day 4: 🔢:</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />&nbsp;
-    <h2><a href="">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code-2023/tree/d65d143efbb8e7562312baef20d040231bfe1b47/day4">Code</a></h2>
   </summary>
   <ul>
     <li>
