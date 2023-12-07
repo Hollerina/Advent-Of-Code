@@ -93,12 +93,12 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Add all the values together that are adjacent (diagonally, up/down, left/right) to special characters.</span><br/>
       <b>&emsp;Output:</b><br/>
       <span>&emsp;&emsp;&emsp;Summation of all adjacent numbers to symbols.</span><br/>
-      <b>&emsp;Solution Overview:</b>
+      <b>&emsp;Solution Overview:</b></br>
       <span>&emsp;&emsp;&emsp;To find the numbers needed to be added. The program finds positions of all special chars.</span><br/>
       <span>&emsp;&emsp;&emsp;Once they have all been found, each of the eight positions around it are checked.</span><br/>
       <span>&emsp;&emsp;&emsp;If a number is present in the positions around, the find number function is called.</span><br/>
       <span>&emsp;&emsp;&emsp;Once the number has been found it is added to the total.</span><br/>
-      <b>Part 2:</b>
+      <b>Part 2:</b></br>
       <b>&emsp;Input:</b><br/>
       <span>&emsp;&emsp;&emsp;List of strings where each one contains either special characters/dots/numbers.</span><br/>
       <b>&emsp;Task:</b><br/>
@@ -106,11 +106,9 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Using these values multiply them and add to running sum.</span><br/>
       <b>&emsp;Output:</b><br/>
       <span>&emsp;&emsp;&emsp;Summation of all multiplications of the two numbers adjacent to gear.</span><br/>
-      <b>&emsp;Solution Overview:</b>
-      <span>&emsp;&emsp;&emsp;Using find special char array, find * gears.</span><br/>
-      <span>&emsp;&emsp;&emsp; Then find the numbers around those gears and have a count.</span><br/>
-      <span>&emsp;&emsp;&emsp;Count allows us to see if the requirement of two has been met.</span><br/>
-      <span>&emsp;&emsp;&emsp;If it was met then can add it to the sum.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using find special char array, find * gears. Then find the numbers around those gears and have a count.</span><br/>
+      <span>&emsp;&emsp;&emsp;Count allows us to see if the requirement of two has been met. If it was met then can add it to the sum.</span><br/>
     </li>
   </ul>
 </details>
