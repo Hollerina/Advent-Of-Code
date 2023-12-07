@@ -82,7 +82,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
   <summary>
     <h2>Day 3: 🚠</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />&nbsp;
-    <h2><a href="">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code-2023/tree/7101f646e9f85b5e4bc7c74ad995cb89692e93bf/day3">Code</a></h2>
   </summary>
   <ul>
     <li>
@@ -109,6 +109,39 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Using find special char array, find * gears. Then find the numbers around those gears and have a count.</span><br/>
       <span>&emsp;&emsp;&emsp;Count allows us to see if the requirement of two has been met. If it was met then can add it to the sum.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 4: :1234:</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />&nbsp;
+    <h2><a href="">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List of strings where each one represents the winning numbers and your numbers.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find numbers you won with and doubling score every time have win on card.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all the winnings.</span><br/>
+      <b>&emsp;Solution Overview:</b>
+      <span>&emsp;&emsp;&emsp;Split the input of each line into winning numbers and your numbers.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using Contains check if your number is in winning number.</span><br/>
+      <span>&emsp;&emsp;&emsp;If it is then add 1 if first value otherwise double score.</span><br/>
+      <b>Part 2:</b>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List of strings where each one represents the winning numbers and your numbers.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many scratch cards there was.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of number of scratch cards.</span><br/>
+      <b>&emsp;Solution Overview:</b>
+      <span>&emsp;&emsp;&emsp;Find the winning values in the scratch card. </span><br/>
+      <span>&emsp;&emsp;&emsp;Build an array which will hold how many of that scratch card you won.</span><br/>
+      <span>&emsp;&emsp;&emsp;Add up all the values in the array for each index.</span><br/>
     </li>
   </ul>
 </details>

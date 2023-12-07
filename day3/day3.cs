@@ -7,28 +7,28 @@ class day3{
 
         foreach(List<int> array in special_pos){
             if(int.TryParse(lines[array[0] - 1][array[1] - 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0] - 1], array[1] - 1);
+                sum += Find_numbers(lines[array[0] - 1], array[1] - 1);
             }
             if(int.TryParse(lines[array[0] - 1][array[1]].ToString(), out _) && !int.TryParse(lines[array[0] - 1][array[1] - 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0] - 1], array[1]);
+                sum += Find_numbers(lines[array[0] - 1], array[1]);
             }
             if(int.TryParse(lines[array[0] - 1][array[1] + 1].ToString(), out _) && !int.TryParse(lines[array[0] - 1][array[1]].ToString(), out _)){
-                sum += find_numbers(lines[array[0] - 1] , array[1] + 1);
+                sum += Find_numbers(lines[array[0] - 1] , array[1] + 1);
             }
             if(int.TryParse(lines[array[0]][array[1] - 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0]], array[1] - 1);
+                sum += Find_numbers(lines[array[0]], array[1] - 1);
             }
             if(int.TryParse(lines[array[0]][array[1] + 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0]], array[1] + 1);
+                sum += Find_numbers(lines[array[0]], array[1] + 1);
             }
             if(int.TryParse(lines[array[0] + 1][array[1] - 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0] + 1], array[1] - 1);
+                sum += Find_numbers(lines[array[0] + 1], array[1] - 1);
             }
             if(int.TryParse(lines[array[0] + 1][array[1]].ToString(), out _) && !int.TryParse(lines[array[0] + 1][array[1] - 1].ToString(), out _)){
-                sum += find_numbers(lines[array[0] + 1], array[1]);
+                sum += Find_numbers(lines[array[0] + 1], array[1]);
             }
             if(int.TryParse(lines[array[0] + 1][array[1] + 1].ToString(), out _) && !int.TryParse(lines[array[0] + 1][array[1]].ToString(), out _)){
-                sum += find_numbers(lines[array[0] + 1], array[1] + 1);
+                sum += Find_numbers(lines[array[0] + 1], array[1] + 1);
             }
         }
         return sum;
@@ -42,35 +42,35 @@ class day3{
 
         foreach(List<int> array in special_pos){
             if(int.TryParse(lines[array[0] - 1][array[1] - 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] - 1], array[1] - 1);
+                multiplication *= Find_numbers(lines[array[0] - 1], array[1] - 1);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0] - 1][array[1]].ToString(), out _) && !int.TryParse(lines[array[0] - 1][array[1] - 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] - 1], array[1]);
+                multiplication *= Find_numbers(lines[array[0] - 1], array[1]);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0] - 1][array[1] + 1].ToString(), out _) && !int.TryParse(lines[array[0] - 1][array[1]].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] - 1] , array[1] + 1);
+                multiplication *= Find_numbers(lines[array[0] - 1] , array[1] + 1);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0]][array[1] - 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0]], array[1] - 1);
+                multiplication *= Find_numbers(lines[array[0]], array[1] - 1);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0]][array[1] + 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0]], array[1] + 1);
+                multiplication *= Find_numbers(lines[array[0]], array[1] + 1);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0] + 1][array[1] - 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] + 1], array[1] - 1);
+                multiplication *= Find_numbers(lines[array[0] + 1], array[1] - 1);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0] + 1][array[1]].ToString(), out _) && !int.TryParse(lines[array[0] + 1][array[1] - 1].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] + 1], array[1]);
+                multiplication *= Find_numbers(lines[array[0] + 1], array[1]);
                 count_gearnum += 1;
             }
             if(int.TryParse(lines[array[0] + 1][array[1] + 1].ToString(), out _) && !int.TryParse(lines[array[0] + 1][array[1]].ToString(), out _)){
-                multiplication *= find_numbers(lines[array[0] + 1], array[1] + 1);
+                multiplication *= Find_numbers(lines[array[0] + 1], array[1] + 1);
                 count_gearnum += 1;
             }
 
@@ -109,7 +109,7 @@ class day3{
 
         return special_pos;
     }
-    public static int find_numbers(string row, int index){
+    public static int Find_numbers(string row, int index){
         //Find the number in the array
         bool found = false;
         string number = "";
