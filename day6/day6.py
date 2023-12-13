@@ -9,7 +9,6 @@ def part1(file):
 
     for index in range(len(times)):
         summation *= reduce(lambda sum, j: sum + (1 if j > distances[index] else 0), quadratic(times[index]), 0)
-
     return summation
 
 def part2(file):
