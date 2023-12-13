@@ -1,3 +1,6 @@
 node_modules/
 package-lock.json
 *.txt
+
+day1/*.js
+day2/*.js
