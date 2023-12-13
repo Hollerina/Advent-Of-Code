@@ -185,4 +185,36 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
     </li>
   </ul>
 </details>
+<details closed>
+  <summary>
+    <h2>Day 6: ⛵</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/e863fb5bfbe163f8e9c26d387148ced650d73fc0/day6">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Time and distances for each race.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute how many different ways the record can be beaten in the time limit.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number of ways to beat record.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Split the input into two arrays containing the time and distances.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each time compute, using quadratics, all the timings.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using reduce calculate how many elements are above the distance for that race.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Time and distances for each race.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute how many different ways the record can be beaten in the time limit.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number of ways to beat record.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Split intput into distance and time and trim numbers to create one number.</span><br/>
+      <span>&emsp;&emsp;&emsp;Call quadratic using that number and then reduce output comparing to distance</span><br/>
+    </li>
+  </ul>
+</details>
 <span>&emsp;&emsp;&emsp;</span><br/>
