@@ -2,6 +2,7 @@
 For Advent of Code 2023 I have decided to test a variety of my programming langues and therefore my solutions will consist of various languages. Below is the Languages I have used so far:
 - TypeScript <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 - C# <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
+- Python <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -114,7 +115,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 </details>
 <details closed>
   <summary>
-    <h2>Day 4: 🔢:</h2>&nbsp;
+    <h2>Day 4: 🔢</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />&nbsp;
     <h2><a href="https://github.com/Hollerina/Advent-Of-Code-2023/tree/d65d143efbb8e7562312baef20d040231bfe1b47/day4">Code</a></h2>
   </summary>
@@ -127,21 +128,60 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Find numbers you won with and doubling score every time have win on card.</span><br/>
       <b>&emsp;Output:</b><br/>
       <span>&emsp;&emsp;&emsp;Summation of all the winnings.</span><br/>
-      <b>&emsp;Solution Overview:</b>
+      <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Split the input of each line into winning numbers and your numbers.</span><br/>
       <span>&emsp;&emsp;&emsp;Using Contains check if your number is in winning number.</span><br/>
       <span>&emsp;&emsp;&emsp;If it is then add 1 if first value otherwise double score.</span><br/>
-      <b>Part 2:</b>
+      <b>Part 2:</b><br/>
       <b>&emsp;Input:</b><br/>
       <span>&emsp;&emsp;&emsp;List of strings where each one represents the winning numbers and your numbers.</span><br/>
       <b>&emsp;Task:</b><br/>
       <span>&emsp;&emsp;&emsp;Find how many scratch cards there was.</span><br/>
       <b>&emsp;Output:</b><br/>
       <span>&emsp;&emsp;&emsp;Summation of number of scratch cards.</span><br/>
-      <b>&emsp;Solution Overview:</b>
+      <b>&emsp;Solution Overview:</b></br>
       <span>&emsp;&emsp;&emsp;Find the winning values in the scratch card. </span><br/>
       <span>&emsp;&emsp;&emsp;Build an array which will hold how many of that scratch card you won.</span><br/>
       <span>&emsp;&emsp;&emsp;Add up all the values in the array for each index.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 5: 🌱</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/0e44c476329ebfb10974b3ccb89a50627b64f257/day5">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Seeds along with the sets of mappings.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute the mappings on the set of seeds and find the min value.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Min seed plot.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Have an array of seeds and an array of map sets.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each map set pass seeds and that map set to mappings.</span><br/>
+      <span>&emsp;&emsp;&emsp;In mappings for each seed find the corresponding mapping.</span><br/>
+      <span>&emsp;&emsp;&emsp;If no mapping is found then return just the orginal number.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue until all mappings are complete.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Seed ranges along with the sets of mappings.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute the mappings on the set of seeds and find the min value.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Min seed plot.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Create an array which will store the start and end point of ranges for the seeds.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each mapping type, call mapping_sets which passes through seeds array and map.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each seed range find the corresponding mapping.</span><br/>
+      <span>&emsp;&emsp;&emsp;If the start and end are both included in mapping range then map the entire set.</span><br/>
+      <span>&emsp;&emsp;&emsp;If only start and end are in range, find the mapped range and create a new seed range of unmapped.</span><br/>
+      <span>&emsp;&emsp;&emsp;If the mapping range is inside the seed range, map these seeds and create two new seed ranges.</span><br/>
+      <span>&emsp;&emsp;&emsp;Repeat until all seed range mappings are complete and then find the minimum.</span><br/>
     </li>
   </ul>
 </details>
