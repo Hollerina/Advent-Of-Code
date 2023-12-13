@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent of Code 2023\\day3\\day3.csproj": {}
+    "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent-of-Code\\Advent-Of-Code-2023\\day3\\day3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent of Code 2023\\day3\\day3.csproj": {
+    "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent-of-Code\\Advent-Of-Code-2023\\day3\\day3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent of Code 2023\\day3\\day3.csproj",
+        "projectUniqueName": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent-of-Code\\Advent-Of-Code-2023\\day3\\day3.csproj",
         "projectName": "day3",
-        "projectPath": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent of Code 2023\\day3\\day3.csproj",
+        "projectPath": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent-of-Code\\Advent-Of-Code-2023\\day3\\day3.csproj",
         "packagesPath": "C:\\Users\\Holly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent of Code 2023\\day3\\obj\\",
+        "outputPath": "C:\\Users\\Holly\\Documents\\Programming Projects\\Advent-of-Code\\Advent-Of-Code-2023\\day3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Holly\\AppData\\Roaming\\NuGet\\NuGet.Config",
