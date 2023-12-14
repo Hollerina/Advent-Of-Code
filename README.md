@@ -3,6 +3,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - TypeScript <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 - C# <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
 - Python <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+- Java <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -213,7 +214,41 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Number of ways to beat record.</span><br/>
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Split intput into distance and time and trim numbers to create one number.</span><br/>
-      <span>&emsp;&emsp;&emsp;Call quadratic using that number and then reduce output comparing to distance</span><br/>
+      <span>&emsp;&emsp;&emsp;Call quadratic using that number and then reduce output comparing to distance.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 7: 🐫</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/203deac9503479865f52cbe58b3157cdcccdd410/day7">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Poker hands with bets.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute winnings after ordering the hands.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Total winnings.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;For each hand transform into a set. Then using length determine the hand type.</span><br/>
+      <span>&emsp;&emsp;&emsp;Call the sorting function with hand and the array of same type of hands.</span><br/>
+      <span>&emsp;&emsp;&emsp;Sort based on highest first digit and if same move to next digit.</span><br/>
+      <span>&emsp;&emsp;&emsp;Sumate the winnings and return the final output.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Poker hands with bets.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Compute winnings after ordering the hands, with J being a joker (wild card).</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Total winnings.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Same as before, but this time count how many J occur. Using this determine the hand.</span><br/>
+      <span>&emsp;&emsp;&emsp;Call sorting with the new knowledge that J is the worst card in deck.</span><br/>
+      <span>&emsp;&emsp;&emsp;Summate the total winnings.</span><br/>
     </li>
   </ul>
 </details>
