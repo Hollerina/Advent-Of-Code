@@ -252,4 +252,35 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
     </li>
   </ul>
 </details>
+<details closed>
+  <summary>
+    <h2>Day 8: 🗺️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/52f3236de71d5a29ca678e156bbacc23870c2516/day8">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Directions and nodes.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Calculate the paths using the directions by starting at AAA and ending at ZZZ.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number of steps taken.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Split input into directions and create a hashmap for the nodes.</span><br/>
+      <span>&emsp;&emsp;&emsp;Starting at AAA, follow the directions until ZZZ is found.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Directions and nodes.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Calculate all paths from any node ending in A to corresponding node ending in Z.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number of steps taken.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Same as before, however now need to find all nodes ending in A.</span><br/>
+      <span>&emsp;&emsp;&emsp;Find the distance between each A and Z path and then find the LCM of all paths.</span><br/>
+    </li>
+  </ul>
+</details>
 <span>&emsp;&emsp;&emsp;</span><br/>
