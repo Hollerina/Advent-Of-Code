@@ -1,9 +1,10 @@
-﻿# Advent-Of-Code-2023 :santa::christmas_tree:
+# Advent-Of-Code-2023 :santa::christmas_tree:
 For Advent of Code 2023 I have decided to test a variety of my programming langues and therefore my solutions will consist of various languages. Below is the Languages I have used so far:
 - TypeScript <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
 - C# <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" />
 - Python <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 - Java <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+- C <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -280,6 +281,72 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Same as before, however now need to find all nodes ending in A.</span><br/>
       <span>&emsp;&emsp;&emsp;Find the distance between each A and Z path and then find the LCM of all paths.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 9: 🏝️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/053240b484db5995a36eb81d8ad36a7fcbe545ba/day9">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List of Sequences.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the next value in the sequence.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Next number in Sequence.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Recurrsively find the difference between the values in the array.</span><br/>
+      <span>&emsp;&emsp;&emsp;When hit 0, go back up to find value to add to last to get the output.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List of Sequences.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the first value in the path before the given sequence.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number in Sequence before first.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Same as before, recurrsively find the differnce between the values.</span><br/>
+      <span>&emsp;&emsp;&emsp;When all 0, go back up and find the difference needed to be taken away from orginal first value.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 10: 🔩</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/053240b484db5995a36eb81d8ad36a7fcbe545ba/day10">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;The maze containg pipes and empty spaces.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find what is the furtherst away pipe from the start.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Number of steps from start.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Create an enum which will hold the directions for each char.</span><br/>
+      <span>&emsp;&emsp;&emsp;Find the start and decide which direction to go in by comparing surronding elements.</span><br/>
+      <span>&emsp;&emsp;&emsp;Once start of path found, use ENUM to walk through the entire path recording step count.</span><br/>
+      <span>&emsp;&emsp;&emsp;Return step count / 2.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;The maze containg pipes and empty spaces.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many tiles are enclosed by the main loop.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Amount of tiles enclosed.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the coordinates of the main loop. Then using this turn any tile not in it to a *.</span><br/>
+      <span>&emsp;&emsp;&emsp;Looping through the entire grid system, if it is * within the given range find if in loop.</span><br/>
+      <span>&emsp;&emsp;&emsp;To do this count how many vertical walls the tile crosses to reach the edges on left and right.</span><br/>
+      <span>&emsp;&emsp;&emsp;If one or both or even then the tile is outside the loop.</span><br/>
     </li>
   </ul>
 </details>
