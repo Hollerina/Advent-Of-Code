@@ -5,3 +5,4 @@ package-lock.json
 day1/*.js
 day2/*.js
 *.class
+.vscode/
