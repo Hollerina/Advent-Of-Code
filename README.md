@@ -5,6 +5,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Python <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
 - Java <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
 - C <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+- Julia <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -347,6 +348,73 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Looping through the entire grid system, if it is * within the given range find if in loop.</span><br/>
       <span>&emsp;&emsp;&emsp;To do this count how many vertical walls the tile crosses to reach the edges on left and right.</span><br/>
       <span>&emsp;&emsp;&emsp;If one or both or even then the tile is outside the loop.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 11: 🌠</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/4debdaa5adfdcf88a98c6b54513ecfb646d00aa8/day11">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Dots to represent empty space, # representing galaxies.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find shortest distnace from each galaxey to others, noting if a row/col empty add another one.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all shortest distances from each galaxey to others.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Start by finding the placement of the Galaxies and then find the col/row which are empty.</span><br/>
+      <span>&emsp;&emsp;&emsp;Find the distance by counting steps horizontal then vertical.</span><br/>
+      <span>&emsp;&emsp;&emsp;If one of the empty row/col is crossed add to the counter.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using counter can calculate actaul distance by. Widht + height + count.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Dots to represent empty space, # representing galaxies.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find shortest distnace from each galaxey to others, noting if a row/col empty times by 1000000.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all shortest distances from each galaxey to others.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Proceed exactly as part one finding galaxies and emptys.</span><br/>
+      <span>&emsp;&emsp;&emsp;Then calculate the shortest distnace for each. However multiply the count by 999999.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 12: ♨️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/4debdaa5adfdcf88a98c6b54513ecfb646d00aa8/day12">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Each line representing which strings in order/not as well as uncertain springs.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find all the combinations the strings can be placed in the ? within it.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all the possibilites.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Recurrsion is used to find all the possible approachs for the string.</span><br/>
+      <span>&emsp;&emsp;&emsp;If the start of string is contained withn in ".?", function called again minsu first part of string.</span><br/>
+      <span>&emsp;&emsp;&emsp;As well as checking if first part is in "#?" then string is validated agaisnt the number array.</span><br/>
+      <span>&emsp;&emsp;&emsp;If valid then it is called again without the first number and the string is concatenated to be without that num.</span><br/>
+      <span>&emsp;&emsp;&emsp;1 is returned if the string is empty as well as num array, it also returned when num array is empty and string contain no more #.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Each line representing which strings in order/not as well as uncertain springs.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find all the combinations the strings can be placed in the ? within it. The input needs to be multipled by 5.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all the possibilites.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using the same method as before but now storing the state in a dictionary.</span><br/>
+      <span>&emsp;&emsp;&emsp;This allows for a sped up process as can jsut call state in the array than recalling recurssion again.</span><br/>
     </li>
   </ul>
 </details>
