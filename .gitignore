@@ -1,8 +1,12 @@
 node_modules/
 package-lock.json
-*.txt
+*.class
+Cargo.lock
 
 day1/*.js
 day2/*.js
-*.class
+*.txt
+
 .vscode/
+.idea/
+target/
