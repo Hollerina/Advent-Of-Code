@@ -6,6 +6,8 @@ Cargo.lock
 day1/*.js
 day2/*.js
 *.txt
+*.exe
+*.obj
 
 .vscode/
 .idea/
