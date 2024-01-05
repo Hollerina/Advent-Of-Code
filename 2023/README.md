@@ -6,6 +6,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Java <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
 - C <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
 - Julia <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />
+- Rust <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -415,6 +416,75 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Using the same method as before but now storing the state in a dictionary.</span><br/>
       <span>&emsp;&emsp;&emsp;This allows for a sped up process as can jsut call state in the array than recalling recurssion again.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 13: (|)</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day13">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Multiple grids of the . and #.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the line of symmetry.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The summation of all the lines of symmetrys.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Begin by splitting the input into arrays for each grid and then each grid becomes char char array.</span><br/>
+      <span>&emsp;&emsp;&emsp;Begin by searching for vertical line. For each possible index check if the grid is symmetrical.</span><br/>
+      <span>&emsp;&emsp;&emsp;If no symmetry is found then continue onto the horrizontal search.</span><br/>
+      <span>&emsp;&emsp;&emsp;Search each horrizontal index. Return the index and type of symmetry which was found.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Multiple grids of the . and #.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the new line of symmetry after finding the smudged char.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The summation of all the lines of symmetrys.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Same as before but change a char to be . if # and # if . . </span><br/>
+      <span>&emsp;&emsp;&emsp;Continue this reverting back to orginal grid if no new line of symmetry found with flipped value.</span><br/>
+      <span>&emsp;&emsp;&emsp;Make sure that the line of symmetry isn't matching the previous line which was found.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 14: 🌕</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day14">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid containing the placement of rocks.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the value of hwo top heavy the grid is after a roll north.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all values from north heavy.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Rocks represented by # won't move when the grid is rolled.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each column find the distance from the top most row and keeping note of new top.</span><br/>
+      <span>&emsp;&emsp;&emsp;If find # then this becomes the new top as rocks can't roll beyond this.</span><br/>
+      <span>&emsp;&emsp;&emsp;Otherwise the new top is just the old top - 1 for each rock found.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid containing the placement of rocks.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the 1000000000 cycle north heavy value.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all values from north heavy.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Begin by finding each cycle by spinning North, East ,South and West.</span><br/>
+      <span>&emsp;&emsp;&emsp;Record each cycle in a hashmap storing the cycle number and the grid.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue this process until a cycle is found. Using this cycle find the grid needed.</span><br/>
+      <span>&emsp;&emsp;&emsp;Once the grid has been found then can calculate the north heavy value.</span><br/>
     </li>
   </ul>
 </details>
