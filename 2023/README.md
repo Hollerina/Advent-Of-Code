@@ -7,6 +7,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - C <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
 - Julia <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />
 - Rust <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />
+- C++ <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -485,6 +486,73 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Record each cycle in a hashmap storing the cycle number and the grid.</span><br/>
       <span>&emsp;&emsp;&emsp;Continue this process until a cycle is found. Using this cycle find the grid needed.</span><br/>
       <span>&emsp;&emsp;&emsp;Once the grid has been found then can calculate the north heavy value.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 15: 🌋</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day14">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;String where each element is seperate via a comma.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the summation of all the hashed values.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of Hashed vals.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Seperate the string on the commas. Then for each element convert each char to ASCII.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each char perform *17 and then mod 256. Continue untill all chars converted.</span><br/>
+      <span>&emsp;&emsp;&emsp;Summate all the possible values.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;String where each element is seperate via a comma.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the summation of lens power.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of the lens powers from each of the boxes.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the hash of each value up to the special char using part1.</span><br/>
+      <span>&emsp;&emsp;&emsp;The hash value tells us which box it belongs in and therefore which key in the hashmap.</span><br/>
+      <span>&emsp;&emsp;&emsp;The special char will determine if need to add to the box or delete it.</span><br/>
+      <span>&emsp;&emsp;&emsp;Process all the elements and then calculate the sum of lens for all at end.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 16: 🔦</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day14">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grids containing where the mirrors and splitters are.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many of the squares will have had light pass through it.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of the number of tiles lit.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Start in top left corner and walk right. Where there is cases for each char.</span><br/>
+      <span>&emsp;&emsp;&emsp;If the light happens to hit a splitter then store one value in a struct.</span><br/>
+      <span>&emsp;&emsp;&emsp;Use the other to continue walking along light path till a wall is hit.</span><br/>
+      <span>&emsp;&emsp;&emsp;If a wall is hit check if the next array is empty, if it is then algorithm complete.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grids containing where the mirrors and splitters are.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the start position which produces most light covered tiles.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The number of tiles which was the most of that grid.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using part1 call for each different posistion.</span><br/>
+      <span>&emsp;&emsp;&emsp;Store all values in a vector and then using this find the max.</span><br/>
     </li>
   </ul>
 </details>
