@@ -8,6 +8,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Julia <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/julia/julia-original.svg" />
 - Rust <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />
 - C++ <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+- Ruby <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -493,7 +494,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
   <summary>
     <h2>Day 15: 🌋</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />&nbsp;
-    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day14">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/7e702a48b507917de0f6fdd451e1f730f1052f18/2023/day15">Code</a></h2>
   </summary>
   <ul>
     <li>
@@ -527,7 +528,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
   <summary>
     <h2>Day 16: 🔦</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />&nbsp;
-    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/53f815737c75e51cff5c7909ef854c731c5b2eb3/2023/day14">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/7e702a48b507917de0f6fdd451e1f730f1052f18/2023/day16">Code</a></h2>
   </summary>
   <ul>
     <li>
@@ -553,6 +554,75 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Using part1 call for each different posistion.</span><br/>
       <span>&emsp;&emsp;&emsp;Store all values in a vector and then using this find the max.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 17: 🔥</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/7e702a48b507917de0f6fdd451e1f730f1052f18/2023/day17">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid containing numbers representing the heatloss for that tile.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the shortest path to end with the min heat loss.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The min heat loss from the start to the end.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Using Dikjstras, need to have a priority queue and a set of visited nodes.</span><br/>
+      <span>&emsp;&emsp;&emsp;As there is a restriction on no more than 3 steps need to check step count.</span><br/>
+      <span>&emsp;&emsp;&emsp;If less than 3 can send that way as well as sending the other ways around the tile.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue until the priority queue is empty.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid containing numbers representing the heatloss for that tile.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the shortest path to end with the min heat loss.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The min heat loss from the start to the end.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Same as before, but with restrictions of min 4 steps and max 10.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue until smallest path has been found.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 18: 🕳️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/7e702a48b507917de0f6fdd451e1f730f1052f18/2023/day18">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List containg direction, step , hexcode.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the area of the dig site by following directions of the list.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The area of the dig site.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;For each line the direction is the first element and the second element is steps taken.</span><br/>
+      <span>&emsp;&emsp;&emsp;To figure out the area of the shape we used two mathematical theorems.</span><br/>
+      <span>&emsp;&emsp;&emsp;The first being <a href= "https://en.wikipedia.org/wiki/Pick%27s_theorem">Picks theorem</a> to find the area of the polygon.</span><br/>
+      <span>&emsp;&emsp;&emsp;This alone will not give us the full area and will miss part of the outer tiles.</span><br/>
+      <span>&emsp;&emsp;&emsp;Thus using the <a href="https://en.wikipedia.org/wiki/Shoelace_formula">Shoelace formula</a> can find the area of the inner border.</span><br/>
+      <span>&emsp;&emsp;&emsp;The end result is inner area + boundary Points.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List containg direction, step , hexcode.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the area of the dig site by following directions of the list.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;The area of the dig site.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;The hexcode is in fact the steps/direction we need. </span><br/>
+      <span>&emsp;&emsp;&emsp;The first 5 chars of hex need to be hexed to find the step count and the last char is direction.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using the same method as before can find the total area.</span><br/>
     </li>
   </ul>
 </details>
