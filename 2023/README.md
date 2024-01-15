@@ -9,6 +9,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Rust <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" />
 - C++ <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
 - Ruby <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
+- Lua <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -623,6 +624,76 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;The hexcode is in fact the steps/direction we need. </span><br/>
       <span>&emsp;&emsp;&emsp;The first 5 chars of hex need to be hexed to find the step count and the last char is direction.</span><br/>
       <span>&emsp;&emsp;&emsp;Using the same method as before can find the total area.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 19: 🏭</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/eec9e4ea0170ba38c7a0c23d40f011e49e5e707c/2023/day19">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Workflows and Ratings.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of all the accepted ratings.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Sum of the ratings.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Starting at "in", loop through the instruction for each of the rating.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each rating determine which path should do down.</span><br/>
+      <span>&emsp;&emsp;&emsp;Each workflow has a backup rule if it doesn't fit any of the first ones.</span><br/>
+      <span>&emsp;&emsp;&emsp;Follow the path until A is reached or R. Adding to total sum if A.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Workflows and Ratings.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the summation of the sets that would be accepted for workflows ignoring ratings.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of rating sets.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Follwing the same method as in part1, however now will have an upper and lower bound.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using recurssion, find the sets which will be accepted.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 20: 🔌</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/eec9e4ea0170ba38c7a0c23d40f011e49e5e707c/2023/day20">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Module Configuration.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the pulse count of low and high at 1000 button presses.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Multiplication of low and high pulse count at 1000.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Before begining the different time of structures were created.</span><br/>
+      <span>&emsp;&emsp;&emsp;Each type all contained "connections" which held a table pointing to nodes it connected too.</span><br/>
+      <span>&emsp;&emsp;&emsp;For flip flops, it held the previous state and when a low pulse would be sent to it this changes.</span><br/>
+      <span>&emsp;&emsp;&emsp;Conjunctions hold "prevConnections" whihc is a table holding what nodes point to it as well as the state.</span><br/>
+      <span>&emsp;&emsp;&emsp;For each button press create a queue of the instructions to be complete.</span><br/>
+      <span>&emsp;&emsp;&emsp;Proceed until the queue is empty ,returing the pulse counts and the new nodes table.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue until 1000 steps is reached or until a loop is formed.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Module Configuration.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many steps it takes the reach a low pulse to the output "rx".</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Step count.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using the same nodes table and button pressed function. As well as noticing a conjunction points to "rx".</span><br/>
+      <span>&emsp;&emsp;&emsp;The conjunction point to "rx" also has 4 conjunction pointing to it. </span><br/>
+      <span>&emsp;&emsp;&emsp;Therefore the steps can be found with the LCM of step count for when each conjunction sends a high pulse.</span><br/>
     </li>
   </ul>
 </details>
