@@ -10,6 +10,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - C++ <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
 - Ruby <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
 - Lua <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />
+- Nim 👑
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -694,6 +695,70 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;Using the same nodes table and button pressed function. As well as noticing a conjunction points to "rx".</span><br/>
       <span>&emsp;&emsp;&emsp;The conjunction point to "rx" also has 4 conjunction pointing to it. </span><br/>
       <span>&emsp;&emsp;&emsp;Therefore the steps can be found with the LCM of step count for when each conjunction sends a high pulse.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 21: 🚶 👑</h2>&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day21">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid of rocks and garden plots.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many garden plots the elf can reach using 64 steps.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of the garden plots after 64 steps.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Find the coordinates of the start posistion marked by "S".</span><br/>
+      <span>&emsp;&emsp;&emsp;For north, south, west and east see if there holds a ".".</span><br/>
+      <span>&emsp;&emsp;&emsp;If it does then add to a set which will then contain the next set of points to look at.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue until 64 steps has been reached.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid of rocks and garden plots.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many garden plots the elf can reach using 26501365 steps witha forever repeating grid.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Sum of all the steps</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using an example followed in <a href="https://youtu.be/9UOMZSL0JTg?si=tHfi1VHB2hjJ_7cU">HyperNeutrino video</a></span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 22: 🧱</h2>&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Each line represents the size of the blocks.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find which blocks if distinagrated wouldn't topple the tower.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Sum of number of blocks.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Start by sorting the bricks based on their z coordinate.</span><br/>
+      <span>&emsp;&emsp;&emsp;Sorting these bricks allows us to see how they would be lay out. Need to check if there is any overlap.</span><br/>
+      <span>&emsp;&emsp;&emsp;Overlap can be found using the x and y coords If they do then they need to go in the next z column.</span><br/>
+      <span>&emsp;&emsp;&emsp;Create sets to hold what each brick holds and what is holding it.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using these sets find the value of the bricks that wont call it all too fall.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Each line represents the size of the blocks.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find how many blocks would topple if the carrying blocks were disintergrated.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Sum of number blocks which will fall.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using same method for part1, but instead of finding block which won't fall.</a></span><br/>
+      <span>&emsp;&emsp;&emsp;Find blocks which only have 1 support and create a set holding all the blocks that will fall with it.</span><br/>
     </li>
   </ul>
 </details>
