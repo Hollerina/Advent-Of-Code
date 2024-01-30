@@ -11,6 +11,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Ruby <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" />
 - Lua <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />
 - Nim 👑
+- Go <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -731,7 +732,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 </details>
 <details closed>
   <summary>
-    <h2>Day 22: 🧱</h2>&nbsp;
+    <h2>Day 22: 🧱 👑</h2>&nbsp;
     <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
   </summary>
   <ul>
@@ -759,6 +760,68 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Using same method for part1, but instead of finding block which won't fall.</a></span><br/>
       <span>&emsp;&emsp;&emsp;Find blocks which only have 1 support and create a set holding all the blocks that will fall with it.</span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 23: 🥾</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid showing forest and paths.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the longest path from the start till the end.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of the length of the path.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Search the grid and when at a crossjunction add that path to an array.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue till reach the end step and add the length to an array.</span><br/>
+      <span>&emsp;&emsp;&emsp;Continue for all paths. Then find the maxiumum of array lengths.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Grid showing forest and paths.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the longest path from the start till the end.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of the length of the path.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the cross junction points finding the lengths to the end.</a></span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 23: 🌧️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Posistion and Velocity.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find the number of hailstones that will hit each other.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Summation of number of hit hailstones.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Using pairings of each of the hailstones calculate if they hit.</span><br/>
+      <span>&emsp;&emsp;&emsp;Using an equation of a line calculate if they hit by finding the coords they cross.</span><br/>
+      <span>&emsp;&emsp;&emsp;Check if coords are in the furture of both of these paths.</span><br/>
+      <b>Part 2:</b><br/>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;Posistion and Velocity.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find where to throw the stone from to hit all hailstones.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;multiplication of x y z coords of stone throwing.</span><br/>
+      <b>&emsp;Solution Overview:</b><br/>
+      <span>&emsp;&emsp;&emsp;Using Linear equations of coords and then using gauss elimination to find the coords.</a></span><br/>
     </li>
   </ul>
 </details>
