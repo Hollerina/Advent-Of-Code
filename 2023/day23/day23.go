@@ -77,8 +77,6 @@ func part1() int {
 			if grid[lastElem.x+element[0]][lastElem.y+element[1]] == '.' && !slices.Contains(visited, coord{x: lastElem.x + element[0], y: lastElem.y + element[1]}) {
 				//If firstfound is false then set to true else need to add to the queue
 				if !firstFound {
-					// println("here")
-
 					nextCoord := coord{x: lastElem.x + element[0], y: lastElem.y + element[1]}
 					currPath = append(currPath, nextCoord)
 					firstFound = true
@@ -88,7 +86,6 @@ func part1() int {
 					copy(tmp, currPath[:len(currPath)-1])
 					tmp[len(tmp)-1].x = lastElem.x + element[0]
 					tmp[len(tmp)-1].y = lastElem.y + element[1]
-					// fmt.Printf("WHERE THE FUCK ARE U %v\n", tmp)
 					paths = append(paths, tmp)
 				}
 
@@ -104,7 +101,6 @@ func part1() int {
 					copy(tmp, currPath[:len(currPath)-1])
 					tmp[len(tmp)-1].x = lastElem.x + element[0]
 					tmp[len(tmp)-1].y = lastElem.y + element[1]
-					// fmt.Printf("WHERE THE FUCK ARE U %v\n", tmp)
 					paths = append(paths, tmp)
 				}
 
@@ -115,13 +111,10 @@ func part1() int {
 					currPath = append(currPath, nextCoord)
 					firstFound = true
 				} else {
-					//Copy the currpath and add it onto paths
 					tmp := make([]coord, len(currPath))
 					copy(tmp, currPath[:len(currPath)-1])
 					tmp[len(tmp)-1].x = lastElem.x + element[0]
 					tmp[len(tmp)-1].y = lastElem.y + element[1]
-
-					// fmt.Printf("WHERE THE FUCK ARE U %v\n", tmp)
 					paths = append(paths, tmp)
 				}
 
@@ -132,13 +125,10 @@ func part1() int {
 					currPath = append(currPath, nextCoord)
 					firstFound = true
 				} else {
-					//Copy the currpath and add it onto paths
 					tmp := make([]coord, len(currPath))
 					copy(tmp, currPath[:len(currPath)-1])
 					tmp[len(tmp)-1].x = lastElem.x + element[0]
 					tmp[len(tmp)-1].y = lastElem.y + element[1]
-					// tmp = append(tmp, coord{x: lastElem.x + element[0], y: lastElem.y + element[1]})
-					// fmt.Printf("WHERE THE FUCK ARE U %v\n", tmp)
 					paths = append(paths, tmp)
 				}
 
@@ -149,30 +139,19 @@ func part1() int {
 					currPath = append(currPath, nextCoord)
 					firstFound = true
 				} else {
-					//Copy the currpath and add it onto paths
 					tmp := make([]coord, len(currPath))
 					copy(tmp, currPath[:len(currPath)-1])
 					tmp[len(tmp)-1].x = lastElem.x + element[0]
 					tmp[len(tmp)-1].y = lastElem.y + element[1]
-					// fmt.Printf("WHERE THE FUCK ARE U %v\n", tmp)
 					paths = append(paths, tmp)
 				}
 
 				visited = append(visited, coord{x: lastElem.x, y: lastElem.y})
 			}
-			// else if grid[currPath[len(currPath)-1].x+element[0]][currPath[len(currPath)-1].y+element[1]] == '.' && !slices.Contains(visited, {x: currPath[len(currPath)-1].x+element[0], y:})
 		}
-
-		// fmt.Printf("---------------------")
 
 		firstFound = false
 	}
-
-	// startCoord := coord{x: 2, y: 3}
-	// coords = append(coords, startCoord)
-
-	// fmt.Printf("%d %d\n", visited[0].x, visited[0].y)
-	// fmt.Printf("end: %v", lengths)
 
 	return slices.Max(lengths)
 }
@@ -208,15 +187,11 @@ func part2() int {
 		}
 	}
 
-	// fmt.Printf("%v\n", points)
-
 	graph := make(map[coord]map[coord]int)
 
 	for _, point := range points {
 		graph[point] = make(map[coord]int)
 	}
-
-	// fmt.Println(graph)
 
 	var seen []coord = make([]coord, 1)
 
@@ -229,40 +204,21 @@ func part2() int {
 		seen[0].x = stackEl.x
 		seen[0].y = stackEl.y
 
-		// fmt.Printf("Seen %v \n", seen)
-
-		// println(len(stack))
-
 		for len(stack) > 0 {
 			distance := stack[0].dis
 			row := stack[0].x
 			col := stack[0].y
 			stack = stack[1:]
 
-			// fmt.Printf("%v\n", stack)
-			// fmt.Printf("Values %d %d %d\n", row, col, distance)
-			// fmt.Printf("%b\n", contains(points, coord{x: 22, y: 21}))
-
 			if distance != 0 && contains(points, coord{x: row, y: col}) {
-				// print("here")
 				graph[coord{x: stackEl.x, y: stackEl.y}][coord{x: row, y: col}] = distance
 				continue
 			}
 
 			directions := [][]int{{0, 1}, {1, 0}, {0, -1}, {-1, 0}}
-
 			for _, dir := range directions {
 				nextRow := row + dir[0]
 				nextCol := col + dir[1]
-
-				// fmt.Printf("Row and col %d %d \n", nextRow, nextCol)
-				// fmt.Printf("Seen %v \n", seen)
-				// fmt.Printf("%t ", nextRow >= 0)
-				// fmt.Printf("%t ", nextRow >= 0 && nextRow < len(grid))
-				// fmt.Printf("%t ", nextRow >= 0 && nextRow < len(grid) && nextCol >= 0)
-				// fmt.Printf("%t ", nextRow >= 0 && nextRow < len(grid) && nextCol >= 0 && nextCol < len(grid))
-				// fmt.Printf("%t ", nextRow >= 0 && nextRow < len(grid) && nextCol >= 0 && nextCol < len(grid) && grid[nextRow][nextCol] != '#')
-				// fmt.Printf("%t\n", nextRow >= 0 && nextRow < len(grid) && nextCol >= 0 && nextCol < len(grid) && grid[nextRow][nextCol] != '#' && !contains(seen, coord{x: nextRow, y: nextCol}))
 
 				if nextRow >= 0 && nextRow < len(grid) && nextCol >= 0 && nextCol < len(grid) && grid[nextRow][nextCol] != '#' && !contains(seen, coord{x: nextRow, y: nextCol}) {
 					stack = append(stack, stackElm{x: nextRow, y: nextCol, dis: distance + 1})
@@ -272,16 +228,11 @@ func part2() int {
 		}
 
 	}
-
-	// graph := {pt: {} for pt := points}
-	// fmt.Printf("Graph %v\n", graph)
-
 	return dfs(coord{x: 0, y: 1}, graph)
 }
 
 func contains(s []coord, elem coord) bool {
 	for _, item := range s {
-		// fmt.Printf("%v\n", item)
 		if item == elem {
 			return true
 		}
@@ -296,16 +247,9 @@ func dfs(point coord, graph map[coord]map[coord]int) int {
 
 	m := math.MinInt64
 
-	// fmt.Printf("Graph: %v\n", graph)
-	// fmt.Printf("point: %v\n", point)
-	// fmt.Printf("Graph at point: %v\n", graph[point])
-
 	seenCoords = append(seenCoords, point)
 	for first, _ := range graph[point] {
 
-		// fmt.Printf("point: %v\n", first)
-
-		// fmt.Printf("this is el %d\n", el)
 		if !contains(seenCoords, first) {
 			depthFirst := dfs(first, graph)
 			if m < depthFirst+graph[point][first] {
@@ -335,7 +279,6 @@ func deleteElement(slice []coord, index int) []coord {
 func main() {
 
 	content, error := ioutil.ReadFile("day23.txt")
-
 	// Check whether the 'error' is nil or not. If it
 	//is not nil, then print the error and exit.
 	if error != nil {
@@ -345,7 +288,6 @@ func main() {
 	str := string(content)
 	grid = strings.Split(str, "\n")
 
-	// fmt.Println(grid[1])
 	fmt.Printf("%d\n", part1())
 	fmt.Printf("%d\n", part2())
 }

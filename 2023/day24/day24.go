@@ -137,7 +137,6 @@ func main() {
 			}
 		}
 	}
-
 	//Split each row into its own slice where 6 elements
 	fmt.Printf("%d\n", part1(hailstones))
 	part2(hailstones)
