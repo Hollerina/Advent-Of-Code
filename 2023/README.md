@@ -12,6 +12,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 - Lua <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg" />
 - Nim 👑
 - Go <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
+- JavaScript <img width="17" height="17" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 <details closed >
   <summary>
     <h2>Day 1 :snowflake:</h2>
@@ -197,10 +198,11 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
 <details closed>
   <summary>
     <h2>Day 6: ⛵</h2>&nbsp;
-    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
     <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/e863fb5bfbe163f8e9c26d387148ced650d73fc0/day6">Code</a></h2>
   </summary>
   <ul>
+    Optimised and switched to JavaScript
     <li>
       <b>Part 1:</b></br>
       <b>&emsp;Input:</b><br/>
@@ -767,7 +769,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
   <summary>
     <h2>Day 23: 🥾</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
-    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/6051df22bef419cb0102b1c8989b1020111c7c91/2023/day23">Code</a></h2>
   </summary>
   <ul>
     <li>
@@ -798,7 +800,7 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
   <summary>
     <h2>Day 23: 🌧️</h2>&nbsp;
     <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" />
-    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/blob/b4d233b6005a63552a61898431dc2d047a719b8c/2023/day22/day22.nim">Code</a></h2>
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/6051df22bef419cb0102b1c8989b1020111c7c91/2023/day23">Code</a></h2>
   </summary>
   <ul>
     <li>
@@ -822,6 +824,27 @@ For Advent of Code 2023 I have decided to test a variety of my programming langu
       <span>&emsp;&emsp;&emsp;multiplication of x y z coords of stone throwing.</span><br/>
       <b>&emsp;Solution Overview:</b><br/>
       <span>&emsp;&emsp;&emsp;Using Linear equations of coords and then using gauss elimination to find the coords.</a></span><br/>
+    </li>
+  </ul>
+</details>
+<details closed>
+  <summary>
+    <h2>Day 25: ☎️</h2>&nbsp;
+    <img width="23" height="23" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />&nbsp;
+    <h2><a href="https://github.com/Hollerina/Advent-Of-Code/tree/6051df22bef419cb0102b1c8989b1020111c7c91/2023/day25">Code</a></h2>
+  </summary>
+  <ul>
+    <li>
+      <b>Part 1:</b></br>
+      <b>&emsp;Input:</b><br/>
+      <span>&emsp;&emsp;&emsp;List of the nodes and their connections.</span><br/>
+      <b>&emsp;Task:</b><br/>
+      <span>&emsp;&emsp;&emsp;Find which 3 wires to cut to make 2 seperate sets of nodes.</span><br/>
+      <b>&emsp;Output:</b><br/>
+      <span>&emsp;&emsp;&emsp;Multiplication of the two set lengths.</span><br/>
+      <b>&emsp;Solution Overview:</b></br>
+      <span>&emsp;&emsp;&emsp;Use the min cut theorem to find where the two sets can be made.</span><br/>
+      <span>&emsp;&emsp;&emsp;This can be done by using networkx in python.</span><br/>
     </li>
   </ul>
 </details>
