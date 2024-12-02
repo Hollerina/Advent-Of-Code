@@ -8,6 +8,7 @@ day02/*.js
 *.txt
 *.exe
 *.obj
+*.js
 
 .vscode/
 .idea/
