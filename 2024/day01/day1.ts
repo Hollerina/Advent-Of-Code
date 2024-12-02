@@ -23,7 +23,6 @@ for(let i = 0; i < firstList.length; i++) {
 
 console.log('Part 1:', runningDifference)
 
-
 // Part 2
 let firstListPart2: number[] = []
 let secondListPart2: number[] = []

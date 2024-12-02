@@ -3,8 +3,8 @@ package-lock.json
 *.class
 Cargo.lock
 
-day1/*.js
-day2/*.js
+day01/*.js
+day02/*.js
 *.txt
 *.exe
 *.obj
