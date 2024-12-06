@@ -6,12 +6,17 @@
     "scripts": {
         "test": "npm run day1 && npm run day2",
         "day1": "tsc day01/day1.ts && node day01/day1.js",
-        "day2": "tsc day02/day2.ts && node day02/day2.js"
+        "day2": "tsc day02/day2.ts && node day02/day2.js",
+        "day3": "tsc day03/day3.ts && node day03/day3.js",
+        "day4": "tsc day04/day4.ts && node day04/day4.js",
+        "day5": "tsc day05/day5.ts && node day05/day5.js",
+        "day6": "tsc day06/day6.ts && node day06/day6.js"
+
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@types/node": "^20.10.2",
+        "@types/node": "^20.17.9",
         "typescript": "^5.7.2"
     }
 }
