@@ -1,0 +1,17 @@
+{
+  "name": "2025",
+  "version": "1.0.0",
+  "description": "advent of code 2025",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "day1": "tsc day01/day1.ts && node day01/day1.js",
+    "day2": "tsc day2/day2.ts && node day2/day2.js"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
